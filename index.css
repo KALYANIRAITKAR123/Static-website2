@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @keyframes changetext {
+    0% {
+      content: "Mumbai";
+    }
+    20% {
+      content: "Delhi";
+    }
+    35% {
+      content: "Jaipur";
+    }
+    60% {
+      content: "Agra";
+    }
+    80% {
+      content: "Kashmir";
+    }
+    100% {
+      content: "Rajastan";
+    }
+  }
+ 
+
+  
+  nav {
+    width: 100%;
+    height: 5rem;
+    color: white;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F51FF;
+
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: center;
+   
+  }
+  
+  nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: 25%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav .menu a:first-child {
+    color: #00b894;
+  }
+  
+  .bannercontent {
+    background: url(taj.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 0;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  main h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  main h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+  }
+  
+  main p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  main a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  main .btnone {
+    background: yellow;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #00b894;
+    color: white;
+  }
+  
+  
+  .change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: 	#1F51FF;
+  }
+
+  .citycontent
+  {
+    margin: 3rem 0;
+    height: auto;
+    width: 100%;
+    ;
+   
+  }
+.flex
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    margin: 3rem 0;
+}
+.flex-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 3rem;
+    margin: 3rem 0;
+}
+  .left
+  {
+    width: 35%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+  }
+
+  .right
+  {
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    width: 35%;
+  }
+  
+  .right h1
+  {
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .right p
+  {
+    font-size: 20px;
+    margin: 1rem 0;
+  }
+
+  .btn
+  {
+    padding: 0.6rem;
+    border-radius: 15px;
+    background-color: #00b894;
+    border: none;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: orchid;
+    color: white;
+  }
+
+  .resp
+  {
+    max-width: 100%;
+    height: auto;
+  }
